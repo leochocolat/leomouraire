@@ -1,0 +1,96 @@
+.landing-page {
+    // background-image: url(../images/background-about.jpg);
+    background-position: center left;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+  .bloc-content {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+
+    .question {
+      text-align: center;
+      font-size: 80px;
+      font-weight: 600;
+      font-style: oblique;
+
+      .elt-question {
+        display: inline-block;
+      }
+    }
+
+    .skip {
+      text-align: right;
+      width: 80%;
+      padding: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px;
+
+      .skip-btn {
+        display: block;
+        transition: all .2s ease-in-out;
+        color: rgba(255,255,255,0.2);
+        &:hover {
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+          color: rgba(255,255,255,.8);
+        }
+      }
+    }
+
+    .response {
+      text-align: center;
+      input {
+        text-align: center;
+        font-style: oblique;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80px;
+        font-weight: 200;
+        background: none;
+        color: rgba(255,255,255, .4);
+        border-bottom: 1px rgba(255,255,255, .4) solid;
+        &:focus {
+          outline: none;
+          border-bottom: 1px rgba(255,255,255, .8) solid;
+          color: rgba(255,255,255, .8);
+        }
+        &::selection {
+          background-color: white;
+          color: black;
+        }
+        &::placeholder {
+          text-transform: uppercase;
+          font-style: oblique;
+        }
+      }
+
+    }
+  }
+
+  .bubble {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url(../images/background-about-negative.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+.landing-page {
+  &.page-ready {
+
+  }
+}
