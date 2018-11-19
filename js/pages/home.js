@@ -53,7 +53,7 @@ $(".skip-btn").click(function(){
 let namePost = "An Interactive Developer";
 let input = document.getElementById("input");
 let progression = document.getElementById("progression");
-let progressionAdvices = ["Good start", "Here we go !", "Damn Ur close", "Damnn", "Damnnn", "Damnnnn", "Damnnnnn", "Damnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you ?", "...", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for ??", "Alright I'm bored...", "3...", "2...", "1...", "Boooom", "Booooooom"];
+let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said X...", "X!!", "Ok whatever...", "Damnnnn", "Damnnnnn", "Damnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you ?", "...", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for ??", "Alright I'm bored...", "4", "3...", "2...", "1...", "Booooooom"];
 
  function myFunction(){
    inputValue = document.getElementById("input").value;
