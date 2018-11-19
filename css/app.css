@@ -9,6 +9,12 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   font-style: oblique; }
+  body::-moz-selection {
+    background-color: white;
+    color: black; }
+  body::selection {
+    background-color: white;
+    color: black; }
 
 a {
   color: white;
@@ -19,6 +25,14 @@ a {
 
 input {
   border: none; }
+
+span::-moz-selection, div::-moz-selection, a::-moz-selection, p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection h4::-moz-selection {
+  background-color: white;
+  color: black; }
+
+span::selection, div::selection, a::selection, p::selection, h1::selection, h2::selection, h3::selection h4::selection {
+  background-color: white;
+  color: black; }
 
 .move-up-container {
   overflow: hidden; }
@@ -265,18 +279,33 @@ input {
       font-style: oblique; }
       .landing-page .bloc-content .question .elt-question {
         display: inline-block; }
-    .landing-page .bloc-content .skip {
-      text-align: right;
+      .landing-page .bloc-content .question .wow {
+        display: none;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%); }
+    .landing-page .bloc-content .bloc-infos {
+      position: relative;
       width: 80%;
-      padding: 20px 0;
       margin-left: auto;
       margin-right: auto;
       font-size: 25px; }
-      .landing-page .bloc-content .skip .skip-btn {
+      .landing-page .bloc-content .bloc-infos .bloc-progression {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 0; }
+        .landing-page .bloc-content .bloc-infos .bloc-progression span {
+          display: block; }
+      .landing-page .bloc-content .bloc-infos .skip-btn {
+        padding: 15px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
         display: block;
         transition: all .2s ease-in-out;
         color: rgba(255, 255, 255, 0.2); }
-        .landing-page .bloc-content .skip .skip-btn:hover {
+        .landing-page .bloc-content .bloc-infos .skip-btn:hover {
           cursor: pointer;
           transition: all .2s ease-in-out;
           color: rgba(255, 255, 255, 0.8); }
@@ -324,7 +353,6 @@ input {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background-image: url(../images/background-about-negative.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

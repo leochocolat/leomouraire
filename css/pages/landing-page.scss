@@ -1,5 +1,5 @@
 .landing-page {
-    // background-image: url(../images/background-about.jpg);
+    // background-image: url(../images/bg-black.jpg);
     background-position: center left;
     background-size: cover;
     background-attachment: fixed;
@@ -19,17 +19,32 @@
       .elt-question {
         display: inline-block;
       }
+      .wow {
+        display: none;
+        transform: translateY(100%);
+      }
     }
 
-    .skip {
-      text-align: right;
+    .bloc-infos {
+      position: relative;
       width: 80%;
-      padding: 20px 0;
       margin-left: auto;
       margin-right: auto;
       font-size: 25px;
-
+      .bloc-progression {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 0;
+        span {
+          display: block;
+        }
+      }
       .skip-btn {
+        padding: 15px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
         display: block;
         transition: all .2s ease-in-out;
         color: rgba(255,255,255,0.2);
@@ -78,16 +93,17 @@
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background-image: url(../images/background-about-negative.jpg);
+    // background-image: url(../images/bg-white.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+
+  
+
+
 }
-
-
-
 
 .landing-page {
   &.page-ready {

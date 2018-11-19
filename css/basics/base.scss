@@ -9,6 +9,11 @@ body {
   text-transform: uppercase;
   font-style: oblique;
 
+  &::selection {
+    background-color: white;
+    color: black;
+  }
+
   &.page-leave {
     // .navbar {
     //   transition: ease-in-out .5s all;
@@ -43,6 +48,11 @@ a {
 
 input {
   border: none;
+}
+
+span::selection, div::selection, a::selection, p::selection, h1::selection, h2::selection, h3::selection h4::selection {
+  background-color: white;
+  color: black;
 }
 
 
