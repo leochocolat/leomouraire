@@ -66,6 +66,9 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 .move-up {
   transform: translateY(100%);
 }
+.move-up-slow {
+  transform: translateY(100%);
+}
 .appear {
   opacity: 0;
 }
