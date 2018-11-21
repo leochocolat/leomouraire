@@ -1,9 +1,6 @@
 $(".btn-menu").click(function(){
-
   $(".page-menu").toggleClass("open-menu");
-
   $(".navbar .menu").toggleClass("close-menu");
-
 });
 
 

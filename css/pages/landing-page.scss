@@ -19,10 +19,6 @@
       .elt-question {
         display: inline-block;
       }
-      .wow {
-        display: none;
-        transform: translateY(100%);
-      }
     }
 
     .bloc-infos {
@@ -87,20 +83,8 @@
     }
   }
 
-  .bubble {
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    // background-image: url(../images/bg-white.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
 
-  
+
 
 
 }

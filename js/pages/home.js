@@ -1,21 +1,9 @@
-$("body").mousemove(function(e){
-
-  let posX = e.pageX;
-  let posY = e.pageY;
-
-  let cursorMove = new TimelineMax();
-
-  cursorMove.add([
-    TweenMax.to(".bubble", .3, {left: posX, top: posY, ease: Power1.easeOut})
-  ]);
-
-});
 
 $(document).ready(function(){
   let contentAppear = new TimelineMax();
 
   contentAppear.add([
-    TweenMax.staggerTo(".move-up", .5, {y:0, ease:Power2.easeInOut}, .05),
+    TweenMax.staggerTo(".move-up", .5, {y:0, ease:Power4.easeOut}, .05),
     TweenMax.to(".appear", .5, {autoAlpha: 1, ease:Power0.easeInOut})
   ]);
 });
@@ -53,7 +41,7 @@ $(".skip-btn").click(function(){
 let namePost = "An Interactive Developer";
 let input = document.getElementById("input");
 let progression = document.getElementById("progression");
-let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said X...", "X!!", "Ok whatever...", "Damnnnn", "Damnnnnn", "Damnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you ?", "...", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for ??", "Alright I'm bored...", "4", "3...", "2...", "1...", "Booooooom"];
+let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said X...", "X!!", "Ok whatever...", "Damnnnn Ur close !", "Damnnnnnnn", "Damnnnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you ?", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for ??", "Alright I'm bored...", "4...", "3...", "2...", "1...", "Booooooom"];
 
  function myFunction(){
    inputValue = document.getElementById("input").value;
@@ -77,15 +65,11 @@ let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said 
      document.getElementById("input").disabled = true;
      console.log("anim");
 
-     let validAnim = new TimelineMax();
+     setTimeout(function(){
+        location.href = "";
+      }, 3000);
 
-     // validAnim.add([
-     //   TweenMax.staggerTo(".move-up", .3, {y:"100%", ease:Power3.easeInOut}, .03),
-     //   TweenMax.staggerTo(".bloc-infos", .5, {autoAlpha:0, ease:Power3.easeInOut})
-     // ]).add([
-     //   TweenMax.to("#input", .3, {y:"-50%", ease:Power3.easeInOut}),
-     //   TweenMax.to("#input", .6, { width:"100%", color:"white", borderColor: "white", ease:Power1.easeInOut})
-     // ]);
+     let validAnim = new TimelineMax();
 
      validAnim.add([
       TweenMax.staggerTo(".move-up", .3, {y:"100%", ease:Power3.easeInOut}, .03),

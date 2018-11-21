@@ -279,11 +279,6 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
       font-style: oblique; }
       .landing-page .bloc-content .question .elt-question {
         display: inline-block; }
-      .landing-page .bloc-content .question .wow {
-        display: none;
-        -webkit-transform: translateY(100%);
-            -ms-transform: translateY(100%);
-                transform: translateY(100%); }
     .landing-page .bloc-content .bloc-infos {
       position: relative;
       width: 80%;
@@ -347,13 +342,90 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         .landing-page .bloc-content .response input::placeholder {
           text-transform: uppercase;
           font-style: oblique; }
-  .landing-page .bubble {
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat; }
+
+.page-about {
+  overflow-y: auto; }
+  .page-about .content-container {
+    height: 100vh;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-about .content-container .bloc-content {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      height: 100%; }
+      .page-about .content-container .bloc-content .elt-content {
+        text-transform: none;
+        font-size: 50px;
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%; }
+        .page-about .content-container .bloc-content .elt-content h1 {
+          font-size: 50px; }
+        .page-about .content-container .bloc-content .elt-content.left {
+          -webkit-clip-path: polygon(0 100%, 0% 100%, 0 100%);
+                  clip-path: polygon(0 100%, 0% 100%, 0 100%);
+          -webkit-transform: translate(-55%, -55%);
+              -ms-transform: translate(-55%, -55%);
+                  transform: translate(-55%, -55%);
+          -webkit-animation: split-left 1s forwards;
+                  animation: split-left 1s forwards; }
+        .page-about .content-container .bloc-content .elt-content.right {
+          -webkit-transform: translate(-45%, -45%);
+              -ms-transform: translate(-45%, -45%);
+                  transform: translate(-45%, -45%);
+          -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+                  clip-path: polygon(100% 0, 0 0, 100% 100%);
+          -webkit-animation: split-right 1s forwards;
+                  animation: split-right 1s forwards; }
+    .page-about .content-container .image-container {
+      height: 40vh;
+      width: 100%; }
+      .page-about .content-container .image-container .elt-image {
+        opacity: 0;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../images/test2-negatif.jpg); }
+
+@-webkit-keyframes split-left {
+  from { }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@keyframes split-left {
+  from { }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@-webkit-keyframes split-right {
+  from { }
+  to {
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
+
+@keyframes split-right {
+  from { }
+  to {
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }

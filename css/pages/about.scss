@@ -1,0 +1,78 @@
+.page-about {
+  overflow-y: auto;
+
+  .content-container {
+    // background-color: grey;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .bloc-content {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      height: 100%;
+
+      .elt-content {
+        text-transform: none;
+        font-size: 50px;
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+
+
+        h1 {
+          font-size: 50px;
+        }
+
+        &.left {
+          clip-path: polygon(0 100%, 0% 100%, 0 100%);
+          transform: translate(-55%, -55%);
+          animation: split-left 1s forwards;
+
+        }
+        &.right {
+          transform: translate(-45%, -45%);
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+          animation: split-right 1s forwards;
+        }
+      }
+    }
+
+    .image-container {
+      height: 40vh;
+      width: 100%;
+      .elt-image {
+        opacity: 0;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../images/test2-negatif.jpg);
+      }
+    }
+
+  }
+
+}
+
+
+
+@keyframes split-left {
+  from {
+  }
+  to {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes split-right {
+  from {
+  }
+  to {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    transform: translate(-50%, -50%);
+  }
+}
