@@ -67,7 +67,7 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
      console.log("anim");
 
      setTimeout(function(){
-        location.href = "about/index.html";
+        location.href = "leomouraire/about/index.html";
       }, 1000);
 
      let validAnim = new TimelineMax();
