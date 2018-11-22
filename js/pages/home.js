@@ -29,7 +29,7 @@ $("").hover(function(){
 
 $(".skip-btn").click(function(){
   setTimeout(function(){
-     location.href = "leomouraire/about/index.html";
+     location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
    }, 3000);
    input.value = namePost;
    $("body").toggleClass("page-leave");
@@ -67,7 +67,7 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
      console.log("anim");
 
      setTimeout(function(){
-        location.href = "leomouraire/about/index.html";
+        location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
       }, 1000);
 
      let validAnim = new TimelineMax();
