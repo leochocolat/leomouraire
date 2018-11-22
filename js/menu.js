@@ -67,28 +67,28 @@ $(".menu-item").click(function(){
 $(".about").click(function(){
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "";
+     location.href = "leomouraire/about/index.html";
    }, 3000);
 });
 
 $(".work").click(function(){
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "";
+     location.href = "leomouraire/work/index.html";
    }, 3000);
 });
 
 $(".contact").click(function(){
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "";
+     location.href = "leomouraire/contact/index.html";
    }, 3000);
 });
 
 $(".btn-brand").click(function(){
 
   setTimeout(function(){
-     location.href = "";
+     location.href = "leomouraire/index.html";
    }, 3000);
    $("body").toggleClass("page-leave");
 });

@@ -29,7 +29,7 @@ $("").hover(function(){
 
 $(".skip-btn").click(function(){
   setTimeout(function(){
-     location.href = "";
+     location.href = "leomouraire/about/index.html";
    }, 3000);
    input.value = namePost;
    $("body").toggleClass("page-leave");
