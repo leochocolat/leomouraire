@@ -83,8 +83,6 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
 
  };
 
- console.log( window.location );
-
 
 
 //fin
