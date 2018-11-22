@@ -1,4 +1,4 @@
-let controller = new ScrollMagic.Controller();
+// let controller = new ScrollMagic.Controller();
 
 
 $(".elt-work").each(function(){
@@ -15,12 +15,6 @@ $(".elt-work").each(function(){
     TweenMax.to($(this).find("h1"), 1, {autoAlpha: 0, x: "1%"}),
   ])
 
-  // let offDisplay = new TimelineMax();
-  //
-  // offDisplay.add([
-  //
-  // ])
-
   new ScrollMagic.Scene({
           triggerElement: this,
           duration: "50%",
@@ -29,30 +23,7 @@ $(".elt-work").each(function(){
       .setTween(onDisplay)
       .addTo(controller);
 
-  // new ScrollMagic.Scene({
-  //         triggerElement: this,
-  //         duration: "50%",
-  //         triggerHook: "0"
-  //     })
-  //     .setTween(offDisplay)
-  //     .addTo(controller);
 });
-
-let bgWhite = new TimelineMax();
-
-bgWhite.add([
-  TweenMax.to("body", .3, {backgroundColor: "#fff", color: "black", ease: Power3.easeIn}),
-  TweenMax.to(".layer", .3, {color: "black", ease: Power3.easeIn}),
-])
-
-
-new ScrollMagic.Scene({
-        triggerElement: ".bloc-contact",
-        triggerHook: ".5",
-        // duration: "30%",
-    })
-    .setTween(bgWhite)
-    .addTo(controller);
 
 let work = new TimelineMax();
 
@@ -80,42 +51,6 @@ new ScrollMagic.Scene({
 
 
 
-
-// ANIM CONTACT
-$(".bloc-contact").mousemove(function(e){
-  let width = window.innerWidth;
-  let height = window.innerHeight;
-
-  let scrollHeight = document.getElementById("page-work").scrollHeight;
-
-
-  let mouseX = e.pageX - width/2;
-  let mouseY = e.pageY + height/2 - scrollHeight;
-
-  // console.log('mouseX = ' + mouseX);
-
-  let movingWord = new TimelineMax();
-
-  movingWord.add([
-    TweenMax.to(".black", 1, {x: 0.03*mouseX, y: 0.03*mouseY, ease: Power2.easeOut}),
-    TweenMax.to(".white", 1, {x: 0.02*mouseX, y: 0.02*mouseY, ease: Power2.easeOut}),
-  ]);
-
-});
-
-$(".bloc-contact").mouseout(function(){
-  let movingWord = new TimelineMax();
-
-  movingWord.add([
-    TweenMax.to(".black", 1, {x: 0, y: 0, ease: Power4.easeOut}),
-    TweenMax.to(".white", 1, {x: 0, y: 0, ease: Power4.easeOut}),
-  ]);
-});
-
-
-$(".white").hover(function(){
-
-});
 
 //MOVING ON WORK SECTIONS
 

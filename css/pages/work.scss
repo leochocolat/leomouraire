@@ -68,32 +68,6 @@
       }
 
     }
-
-
-
-    .bloc-contact {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 100px;
-      text-transform: none;
-
-      .name {
-        position: absolute;
-
-        &.black {
-          color: black;
-        }
-        &.white {
-          color: white;
-        }
-      }
-
-    }
   }
 
 

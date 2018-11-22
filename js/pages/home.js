@@ -29,11 +29,19 @@ $("").hover(function(){
 
 $(".skip-btn").click(function(){
   setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
+     location.href = "leomouraire/about/index.html";
    }, 3000);
    input.value = namePost;
    $("body").toggleClass("page-leave");
    document.getElementById("progression").innerHTML = "100%";
+
+   let pageLeave = new TimelineMax();
+
+   pageLeave.add([
+     TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+     TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
+     TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
+   ]);
 
 });
 
@@ -69,6 +77,14 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
      setTimeout(function(){
         location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
       }, 1000);
+
+      let pageLeave = new TimelineMax();
+
+      pageLeave.add([
+        TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+        TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
+        TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
+      ]);
 
      let validAnim = new TimelineMax();
 

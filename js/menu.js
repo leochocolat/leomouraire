@@ -64,6 +64,17 @@ $(".menu-item").click(function(){
 });
 
 // LIENS HREF
+
+$(".menu-item").click(function(){
+  let pageLeave = new TimelineMax();
+
+  pageLeave.add([
+    TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+    TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
+    TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
+  ]);
+});
+
 $(".about").click(function(){
   $("body").toggleClass("page-leave");
   setTimeout(function(){
@@ -86,9 +97,8 @@ $(".contact").click(function(){
 });
 
 $(".btn-brand").click(function(){
-
+  $("body").toggleClass("page-leave");
   setTimeout(function(){
      location.href = "https://leochocolat.github.io/leomouraire/index.html";
    }, 3000);
-   $("body").toggleClass("page-leave");
 });
