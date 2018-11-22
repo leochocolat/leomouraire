@@ -420,15 +420,28 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         width: 43%;
         height: 30vh;
         background-color: #969696; }
+        .page-work .bloc-work .col-work .elt-work.klein {
+          background-position: center;
+          background-size: cover;
+          background-image: url(../images/projet1-klein.jpg); }
         .page-work .bloc-work .col-work .elt-work h1 {
+          white-space: nowrap;
+          font-weight: 600;
+          font-size: 60px;
           text-transform: none;
           position: absolute;
-          top: 50%;
+          top: 30%;
           right: 0;
           -webkit-transform: translate(0%, -50%);
               -ms-transform: translate(0%, -50%);
                   transform: translate(0%, -50%);
           opacity: 0; }
+        .page-work .bloc-work .col-work .elt-work .moving-title-work {
+          opacity: 0;
+          white-space: nowrap;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
     .page-work .bloc-work .bloc-contact {
       width: 100vw;
       height: 100vh;

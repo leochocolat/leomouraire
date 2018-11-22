@@ -42,7 +42,7 @@ $(".skip-btn").click(function(){
 let namePost = "An Interactive Developer";
 let input = document.getElementById("input");
 let progression = document.getElementById("progression");
-let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said X...", "X!!", "Ok whatever...", "Damnnnn Ur close !", "Damnnnnnnn", "Damnnnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you ?", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for ??", "Alright I'm bored...", "4...", "3...", "2...", "1...", "Booooooom"];
+let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X...", "X!!", "Ok whatever...", "Damnnnn Ur close!", "Damnnnnnnn", "Damnnnnnnnn", "Ok, I think you got it...", "You looked into my code didn't you?", "....", ".....", ".......", "........", "undefined", "defined... lol", "Get it done so we can continue...", "What are you waiting for??!", "Alright I'm bored...", "4...", "3...", "2...", "1...", "Booooooom"];
 
  function myFunction(){
    inputValue = document.getElementById("input").value;
@@ -67,8 +67,8 @@ let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said 
      console.log("anim");
 
      setTimeout(function(){
-        location.href = "";
-      }, 3000);
+        location.href = window.location.host + "/about/index.html";
+      }, 1000);
 
      let validAnim = new TimelineMax();
 
@@ -82,6 +82,8 @@ let progressionAdvices = ["Good start", "Here we go !", "Try an X", "No, I said 
 
 
  };
+
+ console.log( window.location );
 
 
 

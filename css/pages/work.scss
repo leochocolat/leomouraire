@@ -39,13 +39,31 @@
         height: 30vh;
         background-color: #969696;
 
+        &.klein {
+          background-position: center;
+          background-size: cover;
+          background-image: url(../images/projet1-klein.jpg);
+        }
+
         h1 {
+          white-space: nowrap;
+          font-weight: 600;
+          font-size: 60px;
           text-transform: none;
           position: absolute;
-          top: 50%;
+          top: 30%;
           right: 0;
           transform: translate(0%, -50%);
           opacity: 0;
+        }
+
+        .moving-title-work {
+          opacity: 0;
+          white-space: nowrap;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          // transform: translate(-50%, -50%);
         }
       }
 
@@ -77,6 +95,8 @@
 
     }
   }
+
+
 
 
 

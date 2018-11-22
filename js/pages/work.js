@@ -8,10 +8,10 @@ $(".elt-work").each(function(){
   onDisplay.add([
     TweenMax.to($(this), .5, {width: "60%", height: "45vh"})
   ]).add([
-    TweenMax.to($(this), .5, {x:"-20%"}),
+    TweenMax.to($(this), 1, {x:"-20%"}),
     TweenMax.to($(this).find("h1"), 1, {autoAlpha: 1, x: "50%"}),
   ]).add([
-    TweenMax.to($(this), 1, {autoAlpha:0, x:"1%", width:"43%", height: "30vh"}),
+    TweenMax.to($(this), 1, {autoAlpha:1, x:"1%", width:"43%", height: "30vh"}),
     TweenMax.to($(this).find("h1"), 1, {autoAlpha: 0, x: "1%"}),
   ])
 
@@ -23,8 +23,8 @@ $(".elt-work").each(function(){
 
   new ScrollMagic.Scene({
           triggerElement: this,
-          duration: "100%",
-          triggerHook: ".8"
+          duration: "50%",
+          triggerHook: ".5"
       })
       .setTween(onDisplay)
       .addTo(controller);
@@ -88,7 +88,6 @@ $(".bloc-contact").mousemove(function(e){
 
   let scrollHeight = document.getElementById("page-work").scrollHeight;
 
-  console.log(scrollHeight);
 
   let mouseX = e.pageX - width/2;
   let mouseY = e.pageY + height/2 - scrollHeight;
@@ -117,3 +116,48 @@ $(".bloc-contact").mouseout(function(){
 $(".white").hover(function(){
 
 });
+
+//MOVING ON WORK SECTIONS
+
+$(".elt-work").mousemove(function(e){
+
+  let movingTitleWork = $(".moving-title-work");
+  // console.log(movingTitleWork);
+  // console.log(PositionX + " , " + positionY);
+  let title = $(this).find("h1")[0].innerHTML;
+  $(this).find("span")[0].innerHTML = title;
+
+  for (i = 0; i <= movingTitleWork.length ; i++ ) {
+    // let PositionX = movingTitleWork[i].offset().left;
+    // let PositionY = movingTitleWork[i].offset().top;
+  }
+
+  let mouseX = e.pageX - $(this).offset().left;
+  let mouseY = e.pageY - $(this).offset().top;
+
+  console.log(mouseX, mouseY);
+
+  let mouseMoveProjects = new TimelineMax();
+
+  mouseMoveProjects.add([
+    TweenMax.to($(this).find(".moving-title-work"), .5, {autoAlpha: 1, top: mouseY, left: mouseX})
+  ]);
+
+});
+
+$(".elt-work").mouseout(function(){
+
+  let mouseOutProjects = new TimelineMax();
+
+  mouseOutProjects.add([
+    TweenMax.to($(this).find(".moving-title-work"), 1, {autoAlpha: 0, top: "50%", left: "50%"})
+  ]);
+
+});
+
+
+
+
+
+
+//
