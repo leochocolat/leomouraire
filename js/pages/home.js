@@ -14,6 +14,7 @@ $(".link").click(function(){
 
   pageLeave.add([
     TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+    TweenMax.staggerTo(".move-up-slow", .5, {y:"100%", ease:Power2.easeInOut}, .1),
     TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
     TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
   ]);
@@ -29,7 +30,7 @@ $("").hover(function(){
 
 $(".skip-btn").click(function(){
   setTimeout(function(){
-     location.href = "leomouraire/about/index.html";
+     location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
    }, 3000);
    input.value = namePost;
    $("body").toggleClass("page-leave");
@@ -78,26 +79,32 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
         location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
       }, 1000);
 
+      let validAnim = new TimelineMax();
+
+      validAnim.add(
+        TweenMax.to("body", .08, {backgroundColor:"white", ease:Power0.easeInOut})
+      ).add(
+        TweenMax.to("body", .08, {backgroundColor:"black", ease:Power0.easeInOut})
+      ).add(
+        TweenMax.to("body", .08, {backgroundColor:"white", ease:Power0.easeInOut})
+      ).add(
+        TweenMax.to("body", .08, {backgroundColor:"black", ease:Power0.easeInOut})
+      );
+
       let pageLeave = new TimelineMax();
 
       pageLeave.add([
-        TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+        TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut, delay:.5}, .05),
         TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
         TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
       ]);
-
-     let validAnim = new TimelineMax();
-
-     validAnim.add([
-      TweenMax.staggerTo(".move-up", .3, {y:"100%", ease:Power3.easeInOut}, .03),
-      TweenMax.staggerTo(".bloc-infos", .5, {autoAlpha:0, ease:Power3.easeInOut}),
-      TweenMax.to("#input", .5, {autoAlpha:0, ease:Power3.easeInOut})
-    ]);
 
    }
 
 
  };
+
+
 
 
 

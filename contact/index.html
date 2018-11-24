@@ -8,13 +8,32 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/app.css">
 </head>
-<body>
+<body class="page-contact">
 
-  <div class="navbar">
-    <div class="brand"><a href="index.html">Léo Mouraire</a></div>
-    <div class="menu"><span>Menu</span></div>
+  <div class="navbar appear">
+    <div class="brand"><span class="btn-brand link">Léo Mouraire</span></div>
+    <div class="menu"><span id="btn-menu" class="btn-menu appear">Menu</span></div>
   </div>
-  <div class="layer e-mail">l.mouraire@outlook.fr</div>
+
+  <div class="layer e-mail appear">l.mouraire@outlook.fr</div>
+
+  <div class="row container-form">
+    <div class="container-input col-12">
+      <div class="elt-input move-up-container">
+        <input class="move-up" type="text" placeholder="Your Name">
+      </div>
+    </div>
+    <div class="container-input col-12">
+      <div class="elt-input move-up-container">
+        <input class="move-up" type="text" placeholder="Your Email">
+      </div>
+    </div>
+    <div class="container-input col-12">
+      <div class="elt-input move-up-container">
+        <input class="move-up" oninput="scaleInput()" type="text" placeholder="Your Message">
+      </div>
+    </div>
+  </div>
 
   <div id="page-menu" class="page-menu">
 
@@ -66,6 +85,7 @@
   <script src="../js/menu.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/pages/home.js"></script>
+  <script src="../js/pages/contact.js"></script>
 
 </body>
 </html>
