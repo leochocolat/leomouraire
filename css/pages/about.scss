@@ -1,6 +1,32 @@
 .page-about {
   overflow-y: auto;
 
+  // .video-container {
+  //   width: 100vw;
+  //   z-index: 0;
+  //   position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   text-align: right;
+  //   .elt-video {
+  //     margin: auto;
+  //     width: 50vw;
+  //     video {
+  //       width: 100%;
+  //       height: auto;
+  //       filter: invert(0);
+  //     }
+  //   }
+  //
+  // }
+
+  .image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .content-container {
     // background-color: grey;
     height: 100vh;

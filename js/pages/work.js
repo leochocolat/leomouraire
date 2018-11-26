@@ -1,18 +1,27 @@
 // let controller = new ScrollMagic.Controller();
 
+$(".page-work").mousemove(function(e){
+
+  let mouseX = e.pageX;
+  let mouseY = e.pageY;
+
+  // TweenMax.to(".scroll-down", .1, {left: mouseX, top: mouseY});
+
+})
+
 
 $(".elt-work").each(function(){
 
   let onDisplay = new TimelineMax();
 
   onDisplay.add([
-    TweenMax.to($(this), .5, {width: "60%", height: "45vh"})
+    TweenMax.to($(this), .5, {scale:1.2})
   ]).add([
-    TweenMax.to($(this), 1, {x:"-20%"}),
-    TweenMax.to($(this).find("h1"), 1, {autoAlpha: 1, x: "50%"}),
+    TweenMax.to($(this), 1, {x:"-25%"}),
+    TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 1, x: "50%"}),
   ]).add([
-    TweenMax.to($(this), 1, {autoAlpha:1, x:"1%", width:"43%", height: "30vh"}),
-    TweenMax.to($(this).find("h1"), 1, {autoAlpha: 0, x: "1%"}),
+    TweenMax.to($(this), 1, {autoAlpha:1, x:"1%", scale:1}),
+    TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 0, x: "1%"}),
   ])
 
   new ScrollMagic.Scene({

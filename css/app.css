@@ -379,6 +379,13 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 .page-about {
   overflow-y: auto; }
+  .page-about .image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .page-about .content-container {
     height: 100vh;
     -webkit-align-items: center;
@@ -445,19 +452,14 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
       margin-top: 80px; }
       .page-work .bloc-work .col-work .elt-work {
         position: relative;
-        margin: 40px auto;
-        width: 43%;
-        height: 30vh;
-        background-color: #969696; }
-        .page-work .bloc-work .col-work .elt-work.klein {
-          background-position: center;
-          background-size: cover;
-          background-image: url(../images/projet1-klein.jpg); }
-        .page-work .bloc-work .col-work .elt-work h1 {
+        margin: 80px auto;
+        width: 100%;
+        height: 35vh;
+        background-color: #969696;
+        background-position: center;
+        background-size: cover; }
+        .page-work .bloc-work .col-work .elt-work .title-work {
           white-space: nowrap;
-          font-weight: 600;
-          font-size: 60px;
-          text-transform: none;
           position: absolute;
           top: 30%;
           right: 0;
@@ -465,6 +467,15 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
               -ms-transform: translate(0%, -50%);
                   transform: translate(0%, -50%);
           opacity: 0; }
+          .page-work .bloc-work .col-work .elt-work .title-work .tags-title {
+            text-transform: none;
+            font-weight: 600;
+            font-size: 60px; }
+          .page-work .bloc-work .col-work .elt-work .title-work .tags {
+            text-align: right;
+            line-height: 10px;
+            font-size: 14px;
+            font-weight: 300; }
         .page-work .bloc-work .col-work .elt-work .moving-title-work {
           opacity: 0;
           white-space: nowrap;
@@ -474,8 +485,7 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 .page-contact {
   overflow-y: auto; }
-  .page-contact .container-form {
-    min-height: 100vh;
+  .page-contact .big-container-choices {
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
@@ -486,30 +496,21 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     -webkit-justify-content: center;
        -moz-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .page-contact .container-form .container-input {
+            justify-content: center;
+    height: 100vh; }
+    .page-contact .big-container-choices .container-choices-form .container-choice {
       text-align: center; }
-      .page-contact .container-form .container-input .elt-input {
-        max-width: 100vw; }
-        .page-contact .container-form .container-input .elt-input input {
+      .page-contact .big-container-choices .container-choices-form .container-choice .elt-choice {
+        min-width: 100vw; }
+        .page-contact .big-container-choices .container-choices-form .container-choice .elt-choice div {
           white-space: nowrap;
-          line-height: 100px;
-          color: white;
+          line-height: 140px;
+          color: rgba(255, 255, 255, 0.5);
           padding: 0 10%;
           background: none;
-          font-size: 150px;
+          font-size: 140px;
           font-style: oblique;
           font-weight: 600; }
-          .page-contact .container-form .container-input .elt-input input:focus {
-            outline: none;
-            border-bottom: 3px solid white; }
-          .page-contact .container-form .container-input .elt-input input::-webkit-input-placeholder {
-            text-transform: uppercase; }
-          .page-contact .container-form .container-input .elt-input input::-moz-placeholder {
-            text-transform: uppercase; }
-          .page-contact .container-form .container-input .elt-input input:-ms-input-placeholder {
-            text-transform: uppercase; }
-          .page-contact .container-form .container-input .elt-input input::-ms-input-placeholder {
-            text-transform: uppercase; }
-          .page-contact .container-form .container-input .elt-input input::placeholder {
-            text-transform: uppercase; }
+          .page-contact .big-container-choices .container-choices-form .container-choice .elt-choice div:hover {
+            color: white;
+            cursor: pointer; }
