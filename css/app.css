@@ -379,13 +379,6 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 .page-about {
   overflow-y: auto; }
-  .page-about .image-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
   .page-about .content-container {
     height: 100vh;
     -webkit-align-items: center;
@@ -399,6 +392,20 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .page-about .content-container .title-section .content-title {
+      padding: 0 10px;
+      position: absolute;
+      top: 0;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 250px; }
+      .page-about .content-container .title-section .content-title.studies {
+        right: 100%; }
+      .page-about .content-container .title-section .content-title.experience {
+        left: 100%; }
     .page-about .content-container .bloc-content {
       display: -webkit-flex;
       display: -moz-box;
@@ -415,10 +422,12 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
       height: 100%; }
       .page-about .content-container .bloc-content .elt-content {
         text-transform: none;
-        font-size: 50px;
+        font-size: 45px;
         width: 90%; }
+        .page-about .content-container .bloc-content .elt-content .description-content {
+          font-weight: 300; }
         .page-about .content-container .bloc-content .elt-content h1 {
-          font-size: 50px; }
+          font-size: 45px; }
 
 .page-work {
   overflow-y: auto; }

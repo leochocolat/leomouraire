@@ -1,53 +1,49 @@
 .page-about {
   overflow-y: auto;
 
-  // .video-container {
-  //   width: 100vw;
-  //   z-index: 0;
-  //   position: fixed;
-  //   right: 0;
-  //   top: 0;
-  //   text-align: right;
-  //   .elt-video {
-  //     margin: auto;
-  //     width: 50vw;
-  //     video {
-  //       width: 100%;
-  //       height: auto;
-  //       filter: invert(0);
-  //     }
-  //   }
-  //
-  // }
-
-  .image-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   .content-container {
-    // background-color: grey;
     height: 100vh;
     align-items: center;
     align-content: center;
     justify-content: center;
+
+    .title-section {
+      .content-title {
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        transform: translate(0, -50%);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 250px;
+
+        &.studies {
+          right: 100%;
+        }
+
+        &.experience {
+          left: 100%;
+        }
+      }
+    }
 
     .bloc-content {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100%;
-      // background-color: blue;
 
       .elt-content {
         // background-color: yellow;
         text-transform: none;
-        font-size: 50px;
+        font-size: 45px;
         width: 90%;
+
+        .description-content {
+          font-weight: 300;
+        }
         h1 {
-          font-size: 50px;
+          font-size: 45px;
         }
 
       }
