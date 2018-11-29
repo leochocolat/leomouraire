@@ -48,6 +48,28 @@ $(".bloc-contact").mouseout(function(){
 });
 
 
-$(".white").hover(function(){
+// LINKS
+
+$(".bloc-contact").click(function(){
+
+  let nameLink = $(this).find(".name")[0].innerHTML;
+
+  $("body").toggleClass("page-leave");
+  setTimeout(function(){
+     location.href = "https://leochocolat.github.io/leomouraire/" + nameLink + "/index.html";
+   }, 1000);
+
+
 
 });
+
+
+
+
+
+
+
+
+
+
+//

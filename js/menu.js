@@ -75,26 +75,20 @@ $(".menu-item").click(function(){
   ]);
 });
 
-$(".about").click(function(){
-  $("body").toggleClass("page-leave");
-  setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
-   }, 3000);
-});
 
-$(".work").click(function(){
-  $("body").toggleClass("page-leave");
-  setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/work/index.html";
-   }, 3000);
-});
 
-$(".contact").click(function(){
+//links
+
+$(".menu-item-container").click(function(){
+
+  var nameLinkMenu = $(this).find(".menu-item")[0].innerHTML;
+
   $("body").toggleClass("page-leave");
-  setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/contact/index.html";
+      setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/" + nameLinkMenu + "/index.html";
    }, 3000);
-});
+
+})
 
 $(".btn-brand").click(function(){
   $("body").toggleClass("page-leave");

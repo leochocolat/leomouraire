@@ -10,6 +10,7 @@
   text-transform: none;
 
   .name {
+    text-transform: capitalize;
     position: absolute;
 
     &.black {
