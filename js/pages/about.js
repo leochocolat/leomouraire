@@ -23,8 +23,8 @@ $(".title-section").each(function(){
   let titleMoving = new TimelineMax();
 
   titleMoving.add([
-    TweenMax.to($(this).find(".studies"), 1, {right: "-100%"}),
-    TweenMax.to($(this).find(".experience"), 1, {left: "-100%"}),
+    TweenMax.to($(this).find(".right"), 1, {right: "100%"}),
+    TweenMax.to($(this).find(".left"), 1, {left: "100%"}),
   ])
 
 

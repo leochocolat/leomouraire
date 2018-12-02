@@ -15,14 +15,18 @@
         transform: translate(0, -50%);
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 250px;
+        font-size: 200px;
 
-        &.studies {
-          right: 100%;
+        &.first-right {
+          right: 0%;
         }
 
-        &.experience {
-          left: 100%;
+        &.right {
+          right: 0%;
+        }
+
+        &.left {
+          left: -25%;
         }
       }
     }

@@ -402,11 +402,13 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
               transform: translate(0, -50%);
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 250px; }
-      .page-about .content-container .title-section .content-title.studies {
-        right: 100%; }
-      .page-about .content-container .title-section .content-title.experience {
-        left: 100%; }
+      font-size: 200px; }
+      .page-about .content-container .title-section .content-title.first-right {
+        right: 0%; }
+      .page-about .content-container .title-section .content-title.right {
+        right: 0%; }
+      .page-about .content-container .title-section .content-title.left {
+        left: -25%; }
     .page-about .content-container .bloc-content {
       display: -webkit-flex;
       display: -moz-box;
@@ -434,7 +436,7 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
   overflow-y: auto; }
   .page-work .bloc-titre {
     width: 100vw;
-    height: 100vh; }
+    height: 70vh; }
     .page-work .bloc-titre .move-up-container {
       position: fixed;
       top: 50%;
