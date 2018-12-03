@@ -5,8 +5,6 @@ $(".page-work").mousemove(function(e){
   let mouseX = e.pageX;
   let mouseY = e.pageY;
 
-  // TweenMax.to(".scroll-down", .1, {left: mouseX, top: mouseY});
-
 })
 
 
@@ -66,20 +64,16 @@ new ScrollMagic.Scene({
 $(".elt-work").mousemove(function(e){
 
   let movingTitleWork = $(".moving-title-work");
-  // console.log(movingTitleWork);
-  // console.log(PositionX + " , " + positionY);
   let title = $(this).find("h1")[0].innerHTML;
   $(this).find("span")[0].innerHTML = title;
 
   for (i = 0; i <= movingTitleWork.length ; i++ ) {
-    // let PositionX = movingTitleWork[i].offset().left;
-    // let PositionY = movingTitleWork[i].offset().top;
+
   }
 
   let mouseX = e.pageX - $(this).offset().left;
   let mouseY = e.pageY - $(this).offset().top;
 
-  console.log(mouseX, mouseY);
 
   let mouseMoveProjects = new TimelineMax();
 

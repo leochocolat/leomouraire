@@ -337,6 +337,10 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
             clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); } }
 
+.copy-confirmation {
+  position: absolute;
+  opacity: 0; }
+
 .landing-page {
   background-position: center left;
   background-size: cover;
