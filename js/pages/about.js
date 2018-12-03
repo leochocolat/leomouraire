@@ -12,7 +12,6 @@ $(".description-content").each(function(){
           triggerHook: "1",
       })
       .setTween(contentMoving)
-      .addIndicators()
       .addTo(controller);
 
 });
@@ -34,7 +33,6 @@ $(".title-section").each(function(){
           duration: "200%",
       })
       .setTween(titleMoving)
-      .addIndicators()
       .addTo(controller);
 
 });

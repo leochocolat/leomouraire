@@ -293,6 +293,50 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     .bloc-contact .name:hover {
       cursor: pointer; }
 
+#loading {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 150px; }
+  #loading .elt-loader1, #loading .elt-loader2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-weight: 600;
+    padding: 10px; }
+  #loading .elt-loader1 {
+    color: black;
+    -webkit-text-stroke: 1px white; }
+  #loading .elt-loader2 {
+    color: white;
+    text-stroke: 1px white;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    -webkit-animation: clipAnim 5s forwards ease-out;
+            animation: clipAnim 5s forwards ease-out; }
+
+@-webkit-keyframes clipAnim {
+  0% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); } }
+
+@keyframes clipAnim {
+  0% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); } }
+
 .landing-page {
   background-position: center left;
   background-size: cover;
