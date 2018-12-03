@@ -1,6 +1,5 @@
 $(".big-container-choices").mousemove(function(e){
 
-  let sendNudesTop = $("#send-nudes").offset().top
   let mouseY = e.pageY - window.innerHeight/2;
   let mouseX = e.pageX - window.innerWidth/2;
 
@@ -18,4 +17,15 @@ $(".big-container-choices").mouseleave(function(){
   ]);
 })
 
-//
+
+
+$(".container-choices-form").mousemove(function(e){
+
+  let posTop = $(".container-choices-form").offset().top;
+  let posLeft = $(".container-choices-form").offset().left;
+  let blocHeight = $(".container-choices-form").height();
+  let eltHeight = $(".container-choice").height();
+  let mouseY = e.pageY - window.innerHeight/2;
+
+
+});

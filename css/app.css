@@ -545,7 +545,8 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 .page-contact {
   overflow-y: auto; }
-  .page-contact .big-container-choices {
+  .page-contact .big-container-choices .container-choices-form {
+    height: 100vh;
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
@@ -556,8 +557,7 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     -webkit-justify-content: center;
        -moz-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    height: 100vh; }
+            justify-content: center; }
     .page-contact .big-container-choices .container-choices-form .container-choice {
       text-align: center; }
       .page-contact .big-container-choices .container-choices-form .container-choice .elt-choice {

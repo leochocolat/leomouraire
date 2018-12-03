@@ -2,16 +2,29 @@
   overflow-y: auto;
 
   .big-container-choices {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
 
     .container-choices-form {
       // overflow:hidden;
+      height: 100vh;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      #send-nudes {
+        .elt-choice {
+          div {
+            &:hover {
+              // color: #D93BFF;
+            }
+
+          }
+        }
+
+      }
 
       .container-choice {
         text-align: center;
+
 
         .elt-choice {
           min-width: 100vw;
@@ -22,14 +35,10 @@
             padding: 0 10%;
             background: none;
             font-size: 140px;
-            // text-transform: uppercase;
             font-style: oblique;
             font-weight: 600;
-            // transition: all .3s ease-in-out;
 
             &:hover {
-              // transition: all .3s ease-in-out;
-              // background-color: white;
               color: white;
               cursor: pointer;
             }

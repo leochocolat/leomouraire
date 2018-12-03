@@ -35,16 +35,13 @@ $("#email").click(function() {
   var posEmailX = $("#email").offset().left;
   var posEmailY = $("#email").offset().top;
   var emailHeight = $("#email").height();
+  let emailContent = document.getElementById("email").innerHTML;
 
-  console.log(emailHeight);
+  document.getElementById("email").innerHTML = "Copied to clipboard";
 
-  // $(".copy-confirmation").css("left", posEmailX);
-  // $(".copy-confirmation").css("top", posEmailY);
-
-  TweenMax.fromTo(".copy-confirmation", .2, {left: posEmailX, top: posEmailY, autoAlpha:0}, {autoAlpha: 1, left: posEmailX, top: posEmailY - 1.5 * emailHeight});
   setTimeout(function(){
-    TweenMax.to(".copy-confirmation", .2, {left: posEmailX, top: posEmailY, autoAlpha:0});
-  }, 1400);
+    document.getElementById("email").innerHTML = "l.mouraire@outlook.fr";
+  }, 1200);
 
 
 
