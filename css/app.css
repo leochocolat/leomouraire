@@ -114,6 +114,9 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
                 transform: rotateZ(-45deg); }
       .navbar .menu.close-menu span:hover:before, .navbar .menu.close-menu span:hover:after {
         background-color: rgba(255, 255, 255, 0.3); }
+  @media screen and (max-width: 500px) {
+    .navbar .menu {
+      text-align: right; } }
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -140,6 +143,15 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     transition: ease-in-out .2s all;
     color: rgba(255, 255, 255, 0.9);
     cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .e-mail {
+      left: 20px; } }
+  @media screen and (max-width: 600px) {
+    .e-mail {
+      left: 15px; } }
+  @media screen and (max-width: 500px) {
+    .e-mail {
+      left: 10px; } }
 
 .page-menu {
   visibility: hidden;
@@ -565,6 +577,12 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     .page-work .bloc-titre .elt-titre {
       font-size: 50px;
       font-weight: 600; }
+      @media screen and (max-width: 500px) {
+        .page-work .bloc-titre .elt-titre {
+          font-size: 40px; } }
+      @media screen and (max-width: 400px) {
+        .page-work .bloc-titre .elt-titre {
+          font-size: 30px; } }
   .page-work .bloc-work {
     -webkit-align-items: center;
        -moz-box-align: center;

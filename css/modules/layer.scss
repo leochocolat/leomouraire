@@ -18,4 +18,13 @@
     color: rgba(255,255,255,.9);
     cursor: pointer;
   }
+  @media screen and (max-width: 768px) {
+    left: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    left: 15px;
+  }
+  @media screen and (max-width: 500px) {
+    left: 10px;
+  }
 }
