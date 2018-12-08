@@ -114,9 +114,6 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
                 transform: rotateZ(-45deg); }
       .navbar .menu.close-menu span:hover:before, .navbar .menu.close-menu span:hover:after {
         background-color: rgba(255, 255, 255, 0.3); }
-  @media screen and (max-width: 500px) {
-    .navbar .menu {
-      text-align: right; } }
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -145,13 +142,11 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     cursor: pointer; }
   @media screen and (max-width: 768px) {
     .e-mail {
-      left: 20px; } }
-  @media screen and (max-width: 600px) {
-    .e-mail {
-      left: 15px; } }
-  @media screen and (max-width: 500px) {
-    .e-mail {
-      left: 10px; } }
+      -webkit-transform: rotateZ(0);
+          -ms-transform: rotate(0);
+              transform: rotateZ(0);
+      left: 5px;
+      bottom: 10px; } }
 
 .page-menu {
   visibility: hidden;

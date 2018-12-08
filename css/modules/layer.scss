@@ -19,12 +19,8 @@
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
-    left: 20px;
-  }
-  @media screen and (max-width: 600px) {
-    left: 15px;
-  }
-  @media screen and (max-width: 500px) {
-    left: 10px;
+    transform: rotateZ(0);
+    left: 5px;
+    bottom: 10px;
   }
 }
