@@ -535,6 +535,21 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         right: 0%; }
       .page-about .content-container .title-section .content-title.left {
         left: -25%; }
+      @media screen and (max-width: 1200px) {
+        .page-about .content-container .title-section .content-title {
+          font-size: 180px; } }
+      @media screen and (max-width: 992px) {
+        .page-about .content-container .title-section .content-title {
+          font-size: 140px; } }
+      @media screen and (max-width: 768px) {
+        .page-about .content-container .title-section .content-title {
+          font-size: 120px; } }
+      @media screen and (max-width: 500px) {
+        .page-about .content-container .title-section .content-title {
+          font-size: 80px; } }
+      @media screen and (max-width: 400px) {
+        .page-about .content-container .title-section .content-title {
+          font-size: 60px; } }
     .page-about .content-container .bloc-content {
       display: -webkit-flex;
       display: -moz-box;
@@ -557,6 +572,26 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
           font-weight: 300; }
         .page-about .content-container .bloc-content .elt-content h1 {
           font-size: 45px; }
+      @media screen and (max-width: 1200px) {
+        .page-about .content-container .bloc-content .elt-content {
+          font-size: 38px; }
+          .page-about .content-container .bloc-content .elt-content h1 {
+            font-size: 38px; } }
+      @media screen and (max-width: 992px) {
+        .page-about .content-container .bloc-content .elt-content {
+          font-size: 35px; }
+          .page-about .content-container .bloc-content .elt-content h1 {
+            font-size: 35px; } }
+      @media screen and (max-width: 768px) {
+        .page-about .content-container .bloc-content .elt-content {
+          font-size: 35px; }
+          .page-about .content-container .bloc-content .elt-content h1 {
+            font-size: 35px; } }
+      @media screen and (max-width: 500px) {
+        .page-about .content-container .bloc-content .elt-content {
+          font-size: 28px; }
+          .page-about .content-container .bloc-content .elt-content h1 {
+            font-size: 28px; } }
 
 .page-work {
   overflow-y: auto; }
