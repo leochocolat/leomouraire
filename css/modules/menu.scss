@@ -45,6 +45,9 @@
         cursor: pointer;
         opacity: 1;
       }
+      @media screen and (max-width: 768px) {
+        line-height: 70px;
+      }
     }
   }
 
@@ -77,6 +80,12 @@
       animation: defile 4.5s forwards;
       animation-timing-function: linear;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
   }
 
 }

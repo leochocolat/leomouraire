@@ -1,0 +1,39 @@
+.page-project {
+
+  .content-container {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    .project-box {
+      height: 400px;
+      background-color: #969696;
+      transform: translateX(10%);
+
+      .container-text {
+        position: absolute;
+        top: 15%;
+        transform: translate(-30%, 0);
+        text-transform: none;
+
+        h1 {
+          font-size: 80px;
+          font-weight: 600;
+        }
+        div {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+
+
+  }
+
+  // background-color: white;
+
+
+
+
+
+}

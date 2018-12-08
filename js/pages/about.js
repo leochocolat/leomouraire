@@ -6,7 +6,6 @@ $(".description-content").each(function(){
     TweenMax.fromTo(this, 1, {x:-50, autoAlpha: 0}, {x:0, autoAlpha: 1, ease:Power1.easeInOut}),
   ])
 
-
   new ScrollMagic.Scene({
           triggerElement: this,
           triggerHook: "1",
@@ -36,29 +35,3 @@ $(".title-section").each(function(){
       .addTo(controller);
 
 });
-
-
-
-
-    // Swift
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //

@@ -1,36 +1,56 @@
 // let controller = new ScrollMagic.Controller();
 
 $(".page-work").mousemove(function(e){
-
   let mouseX = e.pageX;
   let mouseY = e.pageY;
-
 })
 
+  if (window.matchMedia("(min-width: 1200px)").matches) { // If media query matches
+    $(".elt-work").each(function(){
+      let onDisplay = new TimelineMax();
+      onDisplay.add([
+        TweenMax.to($(this), .5, {scale:1.2})
+      ]).add([
+        TweenMax.to($(this), 1, {x:"-25%"}),
+        TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 1, x: "50%"}),
+      ]).add([
+        TweenMax.to($(this), 1, {autoAlpha:1, x:"1%", scale:1}),
+        TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 0, x: "1%"}),
+      ])
 
-$(".elt-work").each(function(){
+      new ScrollMagic.Scene({
+              triggerElement: this,
+              duration: "50%",
+              triggerHook: ".5"
+          })
+          .setTween(onDisplay)
+          .addTo(controller);
+    });
+  } else {
+    $(".elt-work").each(function(){
+      let onDisplay2 = new TimelineMax();
+      onDisplay2.add([
+        TweenMax.to($(this), .5, {scale:1.2}),
+        TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 1, y: "-50%"}),
+      ]).add([
+        TweenMax.to($(this), 1, {autoAlpha:1, scale:1}),
+        TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 0, y: "0%"}),
+      ])
 
-  let onDisplay = new TimelineMax();
+      new ScrollMagic.Scene({
+              triggerElement: this,
+              duration: "50%",
+              triggerHook: ".5"
+          })
+          .setTween(onDisplay2)
+          .addTo(controller);
+    });
 
-  onDisplay.add([
-    TweenMax.to($(this), .5, {scale:1.2})
-  ]).add([
-    TweenMax.to($(this), 1, {x:"-25%"}),
-    TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 1, x: "50%"}),
-  ]).add([
-    TweenMax.to($(this), 1, {autoAlpha:1, x:"1%", scale:1}),
-    TweenMax.to($(this).find(".title-work"), 1, {autoAlpha: 0, x: "1%"}),
-  ])
+  }
 
-  new ScrollMagic.Scene({
-          triggerElement: this,
-          duration: "50%",
-          triggerHook: ".5"
-      })
-      .setTween(onDisplay)
-      .addTo(controller);
 
-});
+
+
 
 let work = new TimelineMax();
 
@@ -49,14 +69,6 @@ new ScrollMagic.Scene({
     })
     .setTween(work)
     .addTo(controller);
-
-
-
-
-
-
-
-
 
 
 //MOVING ON WORK SECTIONS
@@ -93,6 +105,46 @@ $(".elt-work").mouseout(function(){
 
 });
 
+
+$(".elt-work").click(function(){
+
+  let projectName = $(this).find("h1")[0].innerHTML;
+
+  let pageLeave = new TimelineMax();
+
+  pageLeave.add([
+    TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+    TweenMax.staggerTo(".move-up-slow", .5, {y:"100%", ease:Power2.easeInOut}, .1),
+    TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
+    TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
+  ]);
+
+  let divNumber = Math.ceil( window.innerHeight / $(".moving-title-project").height() );
+  let divHeight = $(".moving-title-project").height();
+  document.getElementById("moving-title-project").innerHTML = projectName;
+
+  for(i = 0; i <= divNumber; i++) {
+
+    let div = document.createElement("DIV");
+    div.setAttribute("class", "moving-title-project");
+    div.innerHTML = projectName;
+    document.getElementById("anim-project").appendChild(div);
+
+  }
+
+  let movingTitleWork = new TimelineMax();
+
+  movingTitleWork.add([
+    TweenMax.staggerTo(".moving-title-project", .01, {autoAlpha: 1}, .04)
+  ]).add([
+    TweenMax.staggerTo(".moving-title-project", .1, {autoAlpha: 0}, .04)
+  ]);
+
+  // movingTitleWork.add([
+  //   TweenMax.staggerTo(".moving-title-project", 1, {marginTop: "100%"}, .09)
+  // ]);
+
+});
 
 
 

@@ -1,15 +1,37 @@
-$("body").ready(function(){
+//ANIMS DE BASE
 
+$(document).ready(function(){
+  let contentAppear = new TimelineMax();
 
+  contentAppear.add([
+    TweenMax.staggerTo(".move-up", .5, {y:0, ease:Power4.easeOut}, .05),
+    TweenMax.staggerTo(".move-up-slow", 1, {y:0, ease:Power4.easeOut}, .15),
+    TweenMax.to(".appear", .5, {autoAlpha: 1, ease:Power0.easeInOut})
+  ]);
+});
 
+$(".link").click(function(){
+  let pageLeave = new TimelineMax();
 
+  pageLeave.add([
+    TweenMax.staggerTo(".move-up", .5, {y:"100%", ease:Power2.easeInOut}, .05),
+    TweenMax.staggerTo(".move-up-slow", .5, {y:"100%", ease:Power2.easeInOut}, .1),
+    TweenMax.to(".appear", .5, {autoAlpha: 0, ease:Power0.easeInOut}),
+    TweenMax.staggerTo(".menu-item", .5, {color: "black", ease:Power2.easeInOut}, .05),
+  ]);
+});
 
+//LIENS
 
+$(".btn-brand").click(function(){
+  $("body").toggleClass("page-leave");
+  setTimeout(function(){
+     location.href = "https://leochocolat.github.io/leomouraire/index.html";
+   }, 1000);
 });
 
 
-//copied to clipboard
-
+//COPIED TO CLIPBOARD
 
 $("#email").click(function() {
 

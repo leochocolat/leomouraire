@@ -89,10 +89,3 @@ $(".menu-item-container").click(function(){
    }, 3000);
 
 })
-
-$(".btn-brand").click(function(){
-  $("body").toggleClass("page-leave");
-  setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/index.html";
-   }, 3000);
-});
