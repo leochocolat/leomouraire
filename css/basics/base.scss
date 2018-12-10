@@ -54,6 +54,9 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 .appear {
   opacity: 0;
 }
+.appear-s {
+  opacity: 0;
+}
 
 
 
@@ -62,7 +65,7 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 @media screen and (max-width: 1200px) {
 
-  
+
 
 }
 

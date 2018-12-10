@@ -6,7 +6,8 @@ $(document).ready(function(){
   contentAppear.add([
     TweenMax.staggerTo(".move-up", .5, {y:0, ease:Power4.easeOut}, .05),
     TweenMax.staggerTo(".move-up-slow", 1, {y:0, ease:Power4.easeOut}, .15),
-    TweenMax.to(".appear", .5, {autoAlpha: 1, ease:Power0.easeInOut})
+    TweenMax.to(".appear", .5, {autoAlpha: 1, ease:Power0.easeInOut}),
+    TweenMax.staggerTo(".appear-s", .8, {autoAlpha: 1, ease:Power0.easeInOut}, .1),
   ]);
 });
 
