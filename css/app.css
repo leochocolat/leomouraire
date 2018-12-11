@@ -635,6 +635,16 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         background-color: #969696;
         background-position: center;
         background-size: cover; }
+        .page-work .bloc-work .col-work .elt-work.klein {
+          background-image: url(../images/projet1-klein.jpg); }
+        .page-work .bloc-work .col-work .elt-work.words-cascade {
+          background-image: url(../images/github-logo.jpg); }
+        .page-work .bloc-work .col-work .elt-work.word-reveal {
+          background-image: url(../images/github-logo.jpg); }
+        .page-work .bloc-work .col-work .elt-work.monologue-otis {
+          background-image: url(../images/github-logo.jpg); }
+        .page-work .bloc-work .col-work .elt-work.henri-mouraire {
+          background-image: url(../images/henri-mouraire.jpg); }
         .page-work .bloc-work .col-work .elt-work .title-work {
           white-space: nowrap;
           position: absolute;
@@ -756,13 +766,13 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     margin: 15px 0; }
     .page-project .content-container .container-screenshot .elt-screenshot {
       width: 100%; }
-      .page-project .content-container .container-screenshot .elt-screenshot img {
+      .page-project .content-container .container-screenshot .elt-screenshot img, .page-project .content-container .container-screenshot .elt-screenshot video {
         opacity: 0;
         width: 100%;
         height: auto; }
-      .page-project .content-container .container-screenshot .elt-screenshot.link {
+      .page-project .content-container .container-screenshot .elt-screenshot.elt-link {
         transition: opacity .3s ease-in-out; }
-        .page-project .content-container .container-screenshot .elt-screenshot.link:hover {
+        .page-project .content-container .container-screenshot .elt-screenshot.elt-link:hover {
           transition: opacity .3s ease-in-out;
           opacity: .8; }
   .page-project .content-container .container-text {

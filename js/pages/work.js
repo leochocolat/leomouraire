@@ -124,12 +124,10 @@ $(".elt-work").click(function(){
   document.getElementById("moving-title-project").innerHTML = projectName;
 
   for(i = 0; i <= divNumber; i++) {
-
     let div = document.createElement("DIV");
     div.setAttribute("class", "moving-title-project");
     div.innerHTML = projectName;
     document.getElementById("anim-project").appendChild(div);
-
   }
 
   let movingTitleWork = new TimelineMax();
@@ -140,14 +138,31 @@ $(".elt-work").click(function(){
     TweenMax.staggerTo(".moving-title-project", .1, {autoAlpha: 0}, .04)
   ]);
 
-  // movingTitleWork.add([
-  //   TweenMax.staggerTo(".moving-title-project", 1, {marginTop: "100%"}, .09)
-  // ]);
+
+  //LIENS PROJETS
+
+  console.log(projectName);
+
+  if(projectName == "Klein Blue" ){
+    setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/work/project/klein.html";
+    }, 1000);
+  } else if(projectName == "Henri Mouraire") {
+    setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/work/project/henrimouraire.html";
+    }, 1000);
+  } else if(projectName == "Words Cascade") {
+    setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/work/project/cascade.html";
+    }, 1000);
+  } else if(projectName == "Otis monologue") {
+    setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/work/project/otis.html";
+    }, 1000);
+  } else if (projectName == "Word Reveal") {
+    setTimeout(function(){
+      location.href = "https://leochocolat.github.io/leomouraire/work/project/reveal.html";
+    }, 1000);
+  }
 
 });
-
-
-
-
-
-//
