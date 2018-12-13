@@ -27,7 +27,7 @@ $(".link").click(function(){
 $(".btn-brand").click(function(){
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/index.html";
+     location.href = "https://leomouraire.com";
    }, 1000);
 });
 

@@ -11,6 +11,42 @@
   font-style: oblique;
   font-size: 80px;
 
+  .references {
+    margin-bottom: 10px;
+    width: 100vh;
+    font-size: 17px;
+    font-weight: 200;
+    white-space: nowrap;
+    text-transform: none;
+    z-index: 1000;
+    color: white;
+    position: absolute;
+    right: -25%;
+    transform: rotate(-90deg);
+    bottom: 48.5%;
+    overflow: hidden;
+
+    .elt-references {
+      transform: translateX(100%);
+      animation: deroule 15s infinite linear;
+
+      a {
+        &:hover {
+
+        }
+      }
+    }
+
+    @keyframes deroule {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  }
+
   .wave {
     background-color: black;
     width: 5px;

@@ -23,11 +23,8 @@ $(".bloc-contact").mousemove(function(e){
 
   let scrollHeight = document.querySelector("body").scrollHeight;
 
-
   let mouseX = e.pageX - width/2;
   let mouseY = e.pageY + height/2 - scrollHeight;
-
-  // console.log('mouseX = ' + mouseX);
 
   let movingWord = new TimelineMax();
 
@@ -56,12 +53,10 @@ $(".bloc-contact").click(function(){
 
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/" + nameLink + "/index.html";
+     location.href = "https://leomouraire.com/" + nameLink + "/index.html";
    }, 1000);
 
    TweenMax.to("body", .5, {backgroundColor: "black"});
-
-
 
 });
 

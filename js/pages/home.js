@@ -45,7 +45,7 @@ let progressionAdvices = ["Good start", "Here we go!", "Try an X", "No, I said X
      document.getElementById("input").disabled = true;
 
      setTimeout(function(){
-        location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
+        location.href = "https://leomouraire.com/about/index.html";
       }, 1000);
 
       let validAnim = new TimelineMax();

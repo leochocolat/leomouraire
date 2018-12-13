@@ -85,7 +85,7 @@ $(".menu-item-container").click(function(){
 
   $("body").toggleClass("page-leave");
       setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/" + nameLinkMenu + "/index.html";
+      location.href = "https://leomouraire.com/" + nameLinkMenu + "/index.html";
    }, 3000);
 
 })

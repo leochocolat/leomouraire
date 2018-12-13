@@ -145,23 +145,23 @@ $(".elt-work").click(function(){
 
   if(projectName == "Klein Blue" ){
     setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/work/project/klein.html";
+      location.href = "https://leomouraire.com/work/project/klein.html";
     }, 1000);
   } else if(projectName == "Henri Mouraire") {
     setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/work/project/henrimouraire.html";
+      location.href = "https://leomouraire.com/work/project/henrimouraire.html";
     }, 1000);
   } else if(projectName == "Words Cascade") {
     setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/work/project/cascade.html";
+      location.href = "https://leomouraire.com/work/project/cascade.html";
     }, 1000);
   } else if(projectName == "Otis monologue") {
     setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/work/project/otis.html";
+      location.href = "https://leomouraire.com/work/project/otis.html";
     }, 1000);
   } else if (projectName == "Word Reveal") {
     setTimeout(function(){
-      location.href = "https://leochocolat.github.io/leomouraire/work/project/reveal.html";
+      location.href = "https://leomouraire.com/work/project/reveal.html";
     }, 1000);
   }
 

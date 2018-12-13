@@ -35,11 +35,11 @@ $(".elt-choice").click(function(){
 
   if(choiceValue == "Send Nudes") {
     emailObj = "Some Nudes <3";
-    emailAdress = "";
-    nameContact = "";
-    message = "";
+    emailAdress = "scarlett.johansson@hollywood.com";
+    nameContact = "Scarlett Johansson";
+    message = "Hey handsome...";
   } else if (choiceValue == "Say Hello") {
-    emailObj = "Hello";
+    emailObj = "Hello Bonjour Holà";
     emailAdress = "";
     nameContact = "";
     message = "";
@@ -62,25 +62,44 @@ $(".elt-choice").click(function(){
   ]).add([
     TweenMax.to(".container-form", .01, {display: "block", ease: Power3.easeOut}),
     TweenMax.to(".big-container-choices", .01, {display: "none", ease: Power3.easeOut}),
-    TweenMax.fromTo(".container-form", .5, {autoAlpha: 0}, {autoAlpha: 1, ease: Power3.easeOut}),
+    TweenMax.fromTo(".container-form", .5, {autoAlpha: 0}, {autoAlpha: 1, ease: Power0.easeOut}),
   ]);
 
-  document.getElementById("emailAdress").placeholder = emailAdress;
-  document.getElementById("object").placeholder = emailObj;
-  document.getElementById("name").placeholder = nameContact;
-  document.getElementById("message").placeholder = message;
-  object = document.getElementById("object").placeholder;
+  document.getElementById("Email").placeholder = emailAdress;
+  document.getElementById("Object").placeholder = emailObj;
+  document.getElementById("Name").placeholder = nameContact;
+  document.getElementById("Message").placeholder = message;
+  object = document.getElementById("Object").placeholder;
+});
+
+function autoWrite(){
+  let inputValue = document.getElementById("Object").value;
+  for(i=0; i < inputValue.length ; i++) {
+    if( i == 0 ) {
+      $("#Object").val(object.charAt(i));
+    } else {
+      $("#Object").val( $("#Object").val() + object.charAt(i));
+    }
+  }
+  TweenMax.to(".unlock", .3, {autoAlpha: 1});
+};
+
+
+$(".unlock").click(function() {
+  document.getElementById("Object").oninput = "";
+  TweenMax.to(".unlock", .3, {autoAlpha: 0});
+  document.getElementById("Object").value = "";
+  document.getElementById("Object").focus();
 
 });
 
+$(".return-btn").click(function(){
+  setTimeout(function(){
+    location.reload();
+  }, 1000);
+});
 
-function autoWrite(){
-  let inputValue = document.getElementById("object").value;
-  for(i=0; i < inputValue.length ; i++) {
-    if( i == 0 ) {
-      $("#object").val(object.charAt(i));
-    } else {
-      $("#object").val( $("#object").val() + object.charAt(i));
-    }
-  }
-};
+$(".container-input").click(function(){
+  $(this).find("input").focus();
+  $(this).find("textarea").focus();
+});

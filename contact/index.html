@@ -43,13 +43,13 @@
   </div>
 
   <div class="container-form row appear">
-    <form action="post">
+    <form action="contact.php" id="form" method="post">
       <div class="container-input col-12 col-md-8">
         <div class="elt-label">
           <label for="">Your name</label>
         </div>
         <div class="elt-input">
-          <input type="text" id="name">
+          <input type="text" name="Name" id="Name">
         </div>
       </div>
       <div class="container-input col-12 col-md-8">
@@ -57,15 +57,15 @@
           <label for="">Your email</label>
         </div>
         <div class="elt-input">
-          <input type="text" id="emailAdress">
+          <input type="text" name="Email" id="Email">
         </div>
       </div>
       <div class="container-input col-12 col-md-8">
         <div class="elt-label">
-          <label for="">Object of your message</label>
+          <label for="">Object of your message<img src="../images/padlock.png" class="unlock"></label>
         </div>
         <div class="elt-input">
-          <input oninput="autoWrite()" type="text" id="object">
+          <input oninput="autoWrite()" type="text" name="Object" id="Object">
         </div>
       </div>
       <div class="container-input col-12 col-md-8">
@@ -73,15 +73,16 @@
           <label for="">Your message</label>
         </div>
         <div class="elt-input">
-          <textarea name="" id="message" cols="30" rows="5"></textarea>
+          <textarea name="Message" id="Message" cols="30" rows="5"></textarea>
         </div>
       </div>
       <div class="container-input col-12 col-md-8">
         <div class="elt-input">
-          <input type="submit" id="submit" value="Send">
+          <input id="submit" type="submit" name="submit" value="Send">
         </div>
       </div>
     </form>
+    <div class="return-btn link">Back</div>
   </div>
 
   <div id="page-menu" class="page-menu">
@@ -135,6 +136,8 @@
   <script src="../js/main.js"></script>
   <script src="../js/pages/home.js"></script>
   <script src="../js/pages/contact.js"></script>
+  <script src="contact-form.js"></script>
+  <script src="jqBootstrapValidation.min.js"></script>
 
 </body>
 </html>
