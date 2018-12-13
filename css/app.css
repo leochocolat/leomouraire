@@ -720,12 +720,22 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
     top: 0;
     left: 0; }
     .page-work .anim-project .moving-title-project {
+      white-space: nowrap;
       text-transform: uppercase;
       font-size: 120px;
       font-weight: 600;
       text-align: center;
       line-height: 120px;
       opacity: 0; }
+      @media screen and (max-width: 768px) {
+        .page-work .anim-project .moving-title-project {
+          font-size: 80px; } }
+      @media screen and (max-width: 650px) {
+        .page-work .anim-project .moving-title-project {
+          font-size: 50px; } }
+      @media screen and (max-width: 550px) {
+        .page-work .anim-project .moving-title-project {
+          font-size: 30px; } }
 
 .page-project {
   overflow-y: auto; }
@@ -857,3 +867,65 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
           .page-contact .big-container-choices .container-choices-form .container-choice .elt-choice div:hover {
             color: white;
             cursor: pointer; }
+  .page-contact .container-form {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    margin: 100px auto;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-contact .container-form form {
+      width: 100%; }
+      .page-contact .container-form form .container-input {
+        width: 90%;
+        margin: 20px auto; }
+        .page-contact .container-form form .container-input .elt-input {
+          width: 100%; }
+          .page-contact .container-form form .container-input .elt-input input {
+            font-style: oblique;
+            font-weight: 200;
+            font-size: 40px;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.5);
+            background: none;
+            border-bottom: 1.5px rgba(255, 255, 255, 0.5) solid; }
+            .page-contact .container-form form .container-input .elt-input input#submit {
+              font-weight: 400;
+              font-size: 30px;
+              color: white;
+              width: 20%;
+              border: 1.5px rgba(255, 255, 255, 0.5) solid;
+              border-radius: 2px; }
+              .page-contact .container-form form .container-input .elt-input input#submit:focus {
+                border: 1.5px white solid; }
+            .page-contact .container-form form .container-input .elt-input input:focus {
+              color: white;
+              outline: none;
+              border-bottom: 1.5px white solid; }
+          .page-contact .container-form form .container-input .elt-input textarea {
+            font-style: oblique;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 40px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            width: 100%;
+            background: none;
+            border-bottom: 1.5px rgba(255, 255, 255, 0.5) solid; }
+            .page-contact .container-form form .container-input .elt-input textarea:focus {
+              outline: none;
+              color: white;
+              border-bottom: 1.5px white solid; }
+          .page-contact .container-form form .container-input .elt-input input::-moz-selection, .page-contact .container-form form .container-input .elt-input textarea::-moz-selection {
+            background-color: white;
+            color: black; }
+          .page-contact .container-form form .container-input .elt-input input::selection, .page-contact .container-form form .container-input .elt-input textarea::selection {
+            background-color: white;
+            color: black; }
+        .page-contact .container-form form .container-input .elt-label label {
+          font-size: 40px;
+          text-transform: none;
+          font-weight: 400; }

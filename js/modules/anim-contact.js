@@ -59,6 +59,8 @@ $(".bloc-contact").click(function(){
      location.href = "https://leochocolat.github.io/leomouraire/" + nameLink + "/index.html";
    }, 1000);
 
+   TweenMax.to("body", .5, {backgroundColor: "black"});
+
 
 
 });

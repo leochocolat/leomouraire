@@ -49,6 +49,78 @@
 
   }
 
+  .container-form {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    margin: 100px auto;
+    justify-content: center;
+
+    form {
+      width: 100%;
+      .container-input {
+        width: 90%;
+        margin: 20px auto;
+        .elt-input {
+          width: 100%;
+          input {
+            font-style: oblique;
+            font-weight: 200;
+            font-size: 40px;
+            width: 100%;
+            color: rgba(255,255,255,.5);
+            background: none;
+            border-bottom: 1.5px rgba(255,255,255,.5) solid;
+            &#submit {
+              font-weight: 400;
+              font-size: 30px;
+              color: white;
+              width: 20%;
+              border: 1.5px rgba(255,255,255,.5) solid;
+              border-radius: 2px;
+              &:focus {
+                border: 1.5px rgba(255,255,255,1) solid;
+              }
+            }
+            &:focus {
+              color: rgba(255,255,255,1);
+              outline: none;
+              border-bottom: 1.5px rgba(255,255,255,1) solid;
+            }
+          }
+          textarea {
+            font-style: oblique;
+            font-weight: 200;
+            color: rgba(255,255,255,.5);
+            font-size: 40px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            width: 100%;
+            background: none;
+            border-bottom: 1.5px rgba(255,255,255,.5) solid;
+            &:focus {
+              outline: none;
+              color: rgba(255,255,255,1);
+              border-bottom: 1.5px rgba(255,255,255,1) solid;
+            }
+          }
+          input::selection, textarea::selection {
+            background-color: white;
+            color: black;
+          }
+        }
+        .elt-label {
+          label {
+            font-size: 40px;
+            text-transform: none;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
 
 
 

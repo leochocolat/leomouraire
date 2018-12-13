@@ -1,4 +1,4 @@
-let controller = new ScrollMagic.Controller();  
+let controller = new ScrollMagic.Controller();
 
 $(".container-screenshot").each(function(){
 
@@ -62,4 +62,16 @@ $(".btn-previous").mousemove(function(e){
 
 $(".btn-previous").mouseleave(function() {
   TweenMax.to(".container-previous-apercu", .2, {autoAlpha: 0, ease: Power2.easeOut});
+});
+
+
+$(".link").click(function(){
+
+  let pageLeave = new TimelineMax();
+
+  pageLeave.add([
+    TweenMax.to(".container-screenshot", .5, {autoAlpha: 0}),
+    TweenMax.to(".container-text", .5, {autoAlpha: 0}),
+  ]);
+
 });

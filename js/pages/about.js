@@ -35,3 +35,15 @@ $(".title-section").each(function(){
       .addTo(controller);
 
 });
+
+
+$(".link").click(function(){
+
+  let pageLeave = new TimelineMax();
+
+  pageLeave.add([
+    TweenMax.to(".title-section", .5, {autoAlpha: 0}),
+    TweenMax.to(".description-content", .5, {autoAlpha: 0}),
+  ]);
+
+});
