@@ -31,12 +31,12 @@ $Body .= "\n";
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.serge-bocancea.fr/confirmation.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.leomouraire.com/contact/confirmation.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.serge-bocancea.fr/erreur.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.leomouraire.com/contact/error.html\">";
 }
 ?>
 
 
-<!-- Faire page confirmation et page erreur  -->  
+<!-- Faire page confirmation et page erreur  -->

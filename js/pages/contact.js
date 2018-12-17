@@ -34,7 +34,7 @@ $(".elt-choice").click(function(){
   let emailAdress;
 
   if(choiceValue == "Send Nudes") {
-    emailObj = "Some Nudes <3";
+    emailObj = "I love you Léo";
     emailAdress = "scarlett.johansson@hollywood.com";
     nameContact = "Scarlett Johansson";
     message = "Hey handsome...";

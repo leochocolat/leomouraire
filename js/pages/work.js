@@ -76,7 +76,7 @@ new ScrollMagic.Scene({
 $(".elt-work").mousemove(function(e){
 
   let movingTitleWork = $(".moving-title-work");
-  let title = $(this).find("h1")[0].innerHTML;
+  let title = $(this).find("h2")[0].innerHTML;
   $(this).find("span")[0].innerHTML = title;
 
   for (i = 0; i <= movingTitleWork.length ; i++ ) {
@@ -108,7 +108,7 @@ $(".elt-work").mouseout(function(){
 
 $(".elt-work").click(function(){
 
-  let projectName = $(this).find("h1")[0].innerHTML;
+  let projectName = $(this).find("h2")[0].innerHTML;
 
   let pageLeave = new TimelineMax();
 

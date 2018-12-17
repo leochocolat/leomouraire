@@ -60,7 +60,7 @@
         .description-content {
           font-weight: 300;
         }
-        h1 {
+        h1, h2 {
           font-size: 45px;
         }
       }
@@ -68,7 +68,7 @@
       @media screen and (max-width: 1200px){
         .elt-content {
           font-size: 38px;
-          h1 {
+          h1, h2 {
             font-size: 38px;
           }
         }
@@ -76,7 +76,7 @@
       @media screen and (max-width: 992px){
         .elt-content {
           font-size: 35px;
-          h1 {
+          h1, h2 {
             font-size: 35px;
           }
         }
@@ -84,7 +84,7 @@
       @media screen and (max-width: 768px){
         .elt-content {
           font-size: 35px;
-          h1 {
+          h1, h2 {
             font-size: 35px;
           }
         }
@@ -92,7 +92,7 @@
       @media screen and (max-width: 500px){
         .elt-content {
           font-size: 28px;
-          h1 {
+          h1, h2 {
             font-size: 28px;
           }
         }

@@ -2,7 +2,7 @@
 
 $(".skip-btn").click(function(){
   setTimeout(function(){
-     location.href = "https://leochocolat.github.io/leomouraire/about/index.html";
+     location.href = "https://leomouraire.com/about/index.html";
    }, 1000);
    input.value = namePost;
    $("body").toggleClass("page-leave");
