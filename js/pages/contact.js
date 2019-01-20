@@ -33,7 +33,7 @@ $(".elt-choice").click(function(){
   let message;
   let emailAdress;
 
-  if(choiceValue == "Send Nudes") {
+  if(choiceValue == "Send Love") {
     emailObj = "I love you Léo";
     emailAdress = "scarlett.johansson@hollywood.com";
     nameContact = "Scarlett Johansson";
@@ -96,7 +96,7 @@ $(".unlock").click(function() {
 $(".return-btn").click(function(){
   setTimeout(function(){
     location.reload();
-  }, 1000);
+  }, 500);
 });
 
 $(".container-input").click(function(){

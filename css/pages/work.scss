@@ -44,6 +44,10 @@
         background-position: center;
         background-size: cover;
 
+
+        &.nike {
+          background-image: url(../images/nike3d.jpg);
+        }
         &.klein {
           background-image: url(../images/projet1-klein.jpg);
         }
@@ -132,6 +136,10 @@
           margin: 40px auto;
           width: 250px;
           height: 140px;
+        }
+
+        &:hover {
+          cursor: pointer;
         }
       }
 

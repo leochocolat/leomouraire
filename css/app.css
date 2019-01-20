@@ -673,6 +673,8 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         background-color: #969696;
         background-position: center;
         background-size: cover; }
+        .page-work .bloc-work .col-work .elt-work.nike {
+          background-image: url(../images/nike3d.jpg); }
         .page-work .bloc-work .col-work .elt-work.klein {
           background-image: url(../images/projet1-klein.jpg); }
         .page-work .bloc-work .col-work .elt-work.words-cascade {
@@ -752,6 +754,8 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
             margin: 40px auto;
             width: 250px;
             height: 140px; } }
+        .page-work .bloc-work .col-work .elt-work:hover {
+          cursor: pointer; }
   .page-work .anim-project {
     width: 100vw;
     position: fixed;
@@ -798,6 +802,9 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
       text-transform: none;
       font-size: 80px;
       font-weight: 600; }
+      @media screen and (max-width: 600px) {
+        .page-project .head-container .project-box .container-title h1 {
+          font-size: 60px; } }
     .page-project .head-container .project-box .container-text {
       margin-top: 50px;
       text-transform: none; }
@@ -810,6 +817,12 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         font-weight: 200; }
         .page-project .head-container .project-box .container-text .elt-text .content-text a:hover {
           border-bottom: 1.5px solid white; }
+      @media screen and (max-width: 600px) {
+        .page-project .head-container .project-box .container-text .elt-text .title-text {
+          font-size: 18px; }
+        .page-project .head-container .project-box .container-text .elt-text .content-text {
+          min-height: 50px;
+          font-size: 18px; } }
   .page-project .content-container .container-screenshot {
     margin: 15px 0; }
     .page-project .content-container .container-screenshot .elt-screenshot {
@@ -818,6 +831,18 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         opacity: 0;
         width: 100%;
         height: auto; }
+      .page-project .content-container .container-screenshot .elt-screenshot.iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+        .page-project .content-container .container-screenshot .elt-screenshot.iframe-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
       .page-project .content-container .container-screenshot .elt-screenshot.elt-link {
         transition: opacity .3s ease-in-out; }
         .page-project .content-container .container-screenshot .elt-screenshot.elt-link:hover {
@@ -837,6 +862,9 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         font-weight: 600; }
         .page-project .content-container .container-text .elt-text a:hover {
           border-bottom: 1.5px solid white; }
+      @media screen and (max-width: 600px) {
+        .page-project .content-container .container-text .elt-text h3, .page-project .content-container .container-text .elt-text a {
+          font-size: 18px; } }
   .page-project .container-links {
     height: 100vh;
     -webkit-align-items: center;
@@ -856,6 +884,12 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         color: rgba(255, 255, 255, 0.3); }
       .page-project .container-links .link-projet:hover {
         cursor: pointer; }
+      @media screen and (max-width: 768px) {
+        .page-project .container-links .link-projet {
+          font-size: 50px; } }
+      @media screen and (max-width: 500px) {
+        .page-project .container-links .link-projet {
+          font-size: 30px; } }
     .page-project .container-links .container-next-apercu, .page-project .container-links .container-previous-apercu {
       opacity: 0;
       position: absolute;
@@ -876,6 +910,22 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
 
 .page-contact {
   overflow-y: auto; }
+  .page-contact .container-message {
+    height: 100vh;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-contact .container-message .elt-message {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 400; }
+      .page-contact .container-message .elt-message a {
+        font-weight: 200; }
   .page-contact .big-container-choices .container-choices-form {
     height: 100vh;
     -webkit-align-items: center;
