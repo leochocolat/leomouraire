@@ -8,9 +8,9 @@ $Object = Trim(stripslashes($_POST['Object']));
 $Message = Trim(stripslashes($_POST['Message']));
 
 if (filter_var($Email, FILTER_VALIDATE_EMAIL)) {
-    print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.serge-bocancea.fr/confirmation.html\">";
+    print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.leomouraire.com/contact/confirmation.html\">";
 } else {
-    print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.serge-bocancea.fr/erreur.html\">";
+    print "<meta http-equiv=\"refresh\" content=\"0;URL=https://www.leomouraire.com/contact/error.html\">";
     exit;
 }
 

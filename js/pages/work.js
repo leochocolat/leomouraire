@@ -163,6 +163,10 @@ $(".elt-work").click(function(){
     setTimeout(function(){
       location.href = "https://leomouraire.com/work/reveal.html";
     }, 1000);
+  } else if (projectName == "Nike 3D shop") {
+    setTimeout(function(){
+      location.href = "https://leomouraire.com/work/nike3d.html";
+    }, 1000);
   }
 
 });
