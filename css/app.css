@@ -556,6 +556,7 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         -ms-flex-pack: center;
             justify-content: center; }
     .page-about .content-container .title-section .content-title {
+      white-space: nowrap;
       padding: 0 10px;
       position: absolute;
       top: 0;
