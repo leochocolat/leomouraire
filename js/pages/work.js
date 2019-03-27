@@ -167,6 +167,10 @@ $(".elt-work").click(function(){
     setTimeout(function(){
       location.href = "https://leomouraire.com/work/nike3d.html";
     }, 1000);
+  } else if (projectName == "Fanette Bullat") {
+    setTimeout(function(){
+      location.href = "https://leomouraire.com/work/fanettebullat.html";
+    }, 1000);
   }
 
 });

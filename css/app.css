@@ -671,9 +671,13 @@ span::selection, div::selection, a::selection, p::selection, h1::selection, h2::
         margin: 80px auto;
         width: 500px;
         height: 280px;
-        background-color: #969696;
+        background-color: black;
         background-position: center;
         background-size: cover; }
+        .page-work .bloc-work .col-work .elt-work.superherocheesecake {
+          background-image: url(../images/shcc-preview.jpg); }
+        .page-work .bloc-work .col-work .elt-work.fanettebullat {
+          background-image: url(../images/fanette-preview.jpg); }
         .page-work .bloc-work .col-work .elt-work.nike {
           background-image: url(../images/nike3d.jpg); }
         .page-work .bloc-work .col-work .elt-work.klein {

@@ -40,11 +40,17 @@
         margin: 80px auto;
         width: 500px;
         height: 280px;
-        background-color: #969696;
+        background-color: black;
         background-position: center;
         background-size: cover;
 
 
+        &.superherocheesecake {
+          background-image: url(../images/shcc-preview.jpg);
+        }
+        &.fanettebullat {
+          background-image: url(../images/fanette-preview.jpg);
+        }
         &.nike {
           background-image: url(../images/nike3d.jpg);
         }
